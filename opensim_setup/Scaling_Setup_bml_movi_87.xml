@@ -324,22 +324,16 @@
 						</BodyScaleSet>
 					</Measurement>
 
-					<!-- HUMERUS: shoulder-to-elbow (lateral and medial) -->
+					<!-- HUMERUS: shoulder joint center to elbow joint center -->
 					<Measurement name="humerus">
 						<apply>true</apply>
 						<MarkerPairSet>
 							<objects>
 								<MarkerPair>
-									<markers> rshom relbm</markers>
+									<markers> rsho relb</markers>
 								</MarkerPair>
 								<MarkerPair>
-									<markers> rshom relbinner</markers>
-								</MarkerPair>
-								<MarkerPair>
-									<markers> lshom lelbm</markers>
-								</MarkerPair>
-								<MarkerPair>
-									<markers> lshom lelbinner</markers>
+									<markers> lsho lelb</markers>
 								</MarkerPair>
 							</objects>
 							<groups />
@@ -357,22 +351,16 @@
 						</BodyScaleSet>
 					</Measurement>
 
-					<!-- RADIUS/ULNA/HAND: elbow-to-wrist (radial and ulnar) -->
+					<!-- RADIUS/ULNA/HAND: elbow joint center to wrist joint center -->
 					<Measurement name="radius">
 						<apply>true</apply>
 						<MarkerPairSet>
 							<objects>
 								<MarkerPair>
-									<markers> relbm rwrithumbside</markers>
+									<markers> relb rwri</markers>
 								</MarkerPair>
 								<MarkerPair>
-									<markers> relbinner rwripinkieside</markers>
-								</MarkerPair>
-								<MarkerPair>
-									<markers> lelbm lwrithumbside</markers>
-								</MarkerPair>
-								<MarkerPair>
-									<markers> lelbinner lwripinkieside</markers>
+									<markers> lelb lwri</markers>
 								</MarkerPair>
 							</objects>
 							<groups />
