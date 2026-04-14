@@ -78,15 +78,21 @@ def perform_scaling(trc_file, output_dir, subject_mass=69, subject_height=1.75):
     scaling_tree = etree.parse(str(SCALING_SETUP_FILE))
     scaling_root = scaling_tree.getroot()
 
-    scaling_root[0].find('GenericModelMaker').find('model_file').text = str(scaled_model_path)
+    # OpenSim resolves paths relative to the setup XML file location.
+    # Since the setup XML, TRC, and output model are all in output_dir,
+    # we use filenames only (not absolute paths) to avoid path doubling.
+    trc_name = trc_file.name
+    model_name = scaled_model_path.name
+
+    scaling_root[0].find('GenericModelMaker').find('model_file').text = model_name
     scaling_root[0].find('mass').text = str(subject_mass)
     scaling_root[0].find('height').text = str(subject_height * 1000)
 
     for mk_f in scaling_root[0].findall('.//marker_file'):
-        mk_f.text = str(trc_file)
+        mk_f.text = trc_name
 
     scaling_root[0].find('.//ModelScaler').find('time_range').text = f'{start_time} {end_time}'
-    scaling_root[0].find('.//ModelScaler').find('output_model_file').text = str(scaled_model_path)
+    scaling_root[0].find('.//ModelScaler').find('output_model_file').text = model_name
 
     mp = scaling_root[0].find('.//MarkerPlacer')
     if mp is not None and mp.find('apply') is not None and mp.find('apply').text.strip().lower() == 'true':
@@ -96,11 +102,11 @@ def perform_scaling(trc_file, output_dir, subject_mass=69, subject_height=1.75):
         else:
             mp.find('time_range').text = f'{start_time} {end_time}'
         if mp.find('output_model_file') is not None:
-            mp.find('output_model_file').text = str(scaled_model_path)
+            mp.find('output_model_file').text = model_name
         if mp.find('output_motion_file') is not None:
-            mp.find('output_motion_file').text = str(output_dir / (trc_file.stem + '_static.mot'))
+            mp.find('output_motion_file').text = trc_file.stem + '_static.mot'
         if mp.find('output_marker_file') is not None:
-            mp.find('output_marker_file').text = str(output_dir / (trc_file.stem + '_markers.xml'))
+            mp.find('output_marker_file').text = trc_file.stem + '_markers.xml'
 
     scaling_setup_temp = output_dir / (trc_file.stem + '_scaling_setup.xml')
     etree.indent(scaling_tree, space='\t', level=0)
@@ -130,10 +136,11 @@ def perform_ik(trc_file, output_dir):
     ik_tree = etree.parse(str(IK_SETUP_FILE))
     ik_root = ik_tree.getroot()
 
-    ik_root.find('.//model_file').text = str(scaled_model_path)
+    # Use filenames only (OpenSim resolves relative to setup XML location)
+    ik_root.find('.//model_file').text = scaled_model_path.name
     ik_root.find('.//time_range').text = f'{start_time} {end_time}'
-    ik_root.find('.//output_motion_file').text = str(mot_file)
-    ik_root.find('.//marker_file').text = str(trc_file)
+    ik_root.find('.//output_motion_file').text = mot_file.name
+    ik_root.find('.//marker_file').text = trc_file.name
 
     ik_setup_temp = output_dir / (trc_file.stem + '_ik_setup.xml')
     ik_tree.write(str(ik_setup_temp), pretty_print=True, xml_declaration=True, encoding='utf-8')
