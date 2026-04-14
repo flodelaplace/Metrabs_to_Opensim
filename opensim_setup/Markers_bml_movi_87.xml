@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <OpenSimDocument Version="40000">
 	<!-- Hybrid marker set for MeTRAbs bml_movi_87 skeleton (87 markers).
 	     Coordinates sourced from Pose2Sim SKEL, HALPE_26, and LSTM marker sets.
@@ -264,14 +264,14 @@
 			<!-- lelbm (idx 10) - left elbow lateral marker - from SKEL LELS -->
 			<Marker name="lelbm">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
-				<location>0 -0.28420000001120066 0.042753818842211015</location>
+				<location>0.015437151049091376 -0.28553200000955226 -0.034974390156691189</location>
 				<fixed>true</fixed>
 			</Marker>
 
 			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
 			<Marker name="lelbinner">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
-				<location>0.015437151049091376 -0.28553200000955226 -0.034974390156691189</location>
+				<location>0 -0.28420000001120066 0.042753818842211015</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -338,14 +338,14 @@
 			<!-- relbm (idx 41) - right elbow lateral marker - from SKEL RELS -->
 			<Marker name="relbm">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
-				<location>0 -0.28420000000906082 -0.044172342106097093</location>
+				<location>0.013638533236292346 -0.28553200000792722 0.03389711713815103</location>
 				<fixed>true</fixed>
 			</Marker>
 
 			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
 			<Marker name="relbinner">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
-				<location>0.013638533236292346 -0.28553200000792722 0.03389711713815103</location>
+				<location>0 -0.28420000000906082 -0.044172342106097093</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -669,6 +669,6 @@
 			</Marker>
 
 		</objects>
-		<groups />
+		<groups/>
 	</MarkerSet>
 </OpenSimDocument>

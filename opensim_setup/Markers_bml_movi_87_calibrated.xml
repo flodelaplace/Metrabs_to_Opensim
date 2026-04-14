@@ -264,14 +264,14 @@
 			<!-- lelbm (idx 10) - left elbow lateral marker - from SKEL LELS -->
 			<Marker name="lelbm">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
-				<location>0.0 -0.28420000001120066 0.042753818842211015</location>
+				<location>0.015437151049091376 -0.28553200000955226 -0.03497439015669119</location>
 				<fixed>true</fixed>
 			</Marker>
 
 			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
 			<Marker name="lelbinner">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
-				<location>0.015437151049091376 -0.28553200000955226 -0.03497439015669119</location>
+				<location>0.0 -0.28420000001120066 0.042753818842211015</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -338,14 +338,14 @@
 			<!-- relbm (idx 41) - right elbow lateral marker - from SKEL RELS -->
 			<Marker name="relbm">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
-				<location>0.0 -0.2842000000090608 -0.04417234210609709</location>
+				<location>0.013638533236292346 -0.2855320000079272 0.03389711713815103</location>
 				<fixed>true</fixed>
 			</Marker>
 
 			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
 			<Marker name="relbinner">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
-				<location>0.013638533236292346 -0.2855320000079272 0.03389711713815103</location>
+				<location>0.0 -0.2842000000090608 -0.04417234210609709</location>
 				<fixed>true</fixed>
 			</Marker>
 
