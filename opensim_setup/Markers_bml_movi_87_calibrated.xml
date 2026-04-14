@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<OpenSimDocument Version="40000">
+	<!-- Hybrid marker set for MeTRAbs bml_movi_87 skeleton (87 markers).
+	     Coordinates sourced from Pose2Sim SKEL, HALPE_26, and LSTM marker sets.
+	     Anatomical markers use SKEL positions; joint centers use HALPE_26/LSTM positions.
+	     Custom positions estimated for markers without direct equivalents. -->
+	<MarkerSet name="markerset">
+		<objects>
+
+			<!-- ============================================================ -->
+			<!-- HEAD (7 markers)                                             -->
+			<!-- ============================================================ -->
+
+			<!-- head (idx 67) - top of head - from HALPE_26 Head -->
+			<Marker name="head">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>0.0159224 0.164131 0.0</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lfronthead (idx 5) - left front temple -->
+			<Marker name="lfronthead">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>0.065 0.12 -0.06</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rfronthead (idx 36) - right front temple -->
+			<Marker name="rfronthead">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>0.065 0.12 0.06</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lbackhead (idx 6) - left back of skull -->
+			<Marker name="lbackhead">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>-0.05 0.1 -0.045</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rbackhead (idx 37) - right back of skull -->
+			<Marker name="rbackhead">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>-0.05 0.1 0.045</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lcheek (idx 24) - left cheek - from LSTM LEye (approx) -->
+			<Marker name="lcheek">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>0.084464 0.0452599 -0.0311069</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rcheek (idx 55) - right cheek - from LSTM REye (approx) -->
+			<Marker name="rcheek">
+				<socket_parent_frame>/bodyset/head</socket_parent_frame>
+				<location>0.084464 0.0452599 0.0311069</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- TORSO (12 markers)                                           -->
+			<!-- ============================================================ -->
+
+			<!-- backneck (idx 0) - C7 vertebra - from SKEL C7 -->
+			<Marker name="backneck">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.07452118968453254 0.3856703898472274 0.0031813856047155156</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- upperback (idx 1) - upper back / lumbar - from SKEL LUMB -->
+			<Marker name="upperback">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.0799446 0.134934 0.0</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- clavicle (idx 2) - clavicle notch - from SKEL CLAV -->
+			<Marker name="clavicle">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.05576894791615942 0.3581936025529926 -0.0003975181768469298</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- sternum (idx 3) - mid-sternum - custom estimate between CLAV and LUMB -->
+			<Marker name="sternum">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.15769222556365192 0.26206913152223943 0.009340250270605532</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- umbilicus (idx 4) - navel - custom estimate, anterior lower torso -->
+			<Marker name="umbilicus">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.20131627666693552 0.04994245766561655 0.007391063457765042</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lback (idx 7) - left back - from SKEL LBAC -->
+			<Marker name="lback">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.08971400022507085 0.39751149641074845 -0.11264130089017754</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rback (idx 38) - right back - from SKEL RBAC -->
+			<Marker name="rback">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.08261176177559881 0.4007791766062005 0.09643248868279154</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lscapula (idx 34) - left scapula - from SKEL LSCA -->
+			<Marker name="lscapula">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.0899423 0.36458411553359216 -0.0765236</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rscapula (idx 65) - right scapula - from SKEL RSCA -->
+			<Marker name="rscapula">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.0899423 0.363059526492817 0.07652358195404159</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lbreast (idx 25) - left chest / rib - from SKEL RIBL -->
+			<Marker name="lbreast">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.14577678560895482 0.26902747740600946 -0.0935781669082049</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rbreast (idx 56) - right chest / rib - from SKEL RIBR -->
+			<Marker name="rbreast">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.15449775089090367 0.27329548325604014 0.10922516027560142</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- thor (idx 70) - thorax center - from HALPE_26 Neck (approx) -->
+			<Marker name="thor">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.0008130659180974221 0.4468968743779194 0.00018485623598098755</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- PELVIS (12 markers)                                          -->
+			<!-- ============================================================ -->
+
+			<!-- lasis (idx 15) - left ASIS - from SKEL LFWT -->
+			<Marker name="lasis">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>0.0037769439732365053 0.017670116614942073 -0.1336379840042214</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rasis (idx 46) - right ASIS - from SKEL RFWT -->
+			<Marker name="rasis">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>0.014390855620824835 0.028009774090960688 0.15125426690435734</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lpsis (idx 16) - left PSIS - from SKEL LBWT -->
+			<Marker name="lpsis">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.16597706776547685 0.04344884075147383 -0.0353764277</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rpsis (idx 47) - right PSIS - from SKEL RBWT -->
+			<Marker name="rpsis">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.1639884357143206 0.03985329590556722 0.0444604063</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- mhip (idx 68) - mid hip center - from HALPE_26 Hip -->
+			<Marker name="mhip">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.0639274 -0.08134311294555664 0.0</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- pelv (idx 69) - pelvis center - custom estimate, centroid of ASIS/PSIS -->
+			<Marker name="pelv">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.0702774582946281 0.029486714065286163 0.0018420795939362116</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lhip (idx 73) - left hip joint center - from LSTM LHJC_study -->
+			<Marker name="lhip">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.12442320535324103 -0.05663980574617294 -0.09999570783152961</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rhip (idx 81) - right hip joint center - from LSTM RHJC_study -->
+			<Marker name="rhip">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.11781031141081684 -0.05108039526399433 0.10141010287421848</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lwaist (idx 27) - left waist - custom estimate, lateral pelvis -->
+			<Marker name="lwaist">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.04168307186251785 0.1893845040478277 -0.16705696609543086</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rwaist (idx 58) - right waist - custom estimate, lateral pelvis -->
+			<Marker name="rwaist">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.0231004305166006 0.20069698569018626 0.1501539202506678</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lbum (idx 35) - left buttock - custom estimate, posterior pelvis -->
+			<Marker name="lbum">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.16007435701880135 -0.11842738667112458 -0.08004856927114438</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rbum (idx 66) - right buttock - custom estimate, posterior pelvis -->
+			<Marker name="rbum">
+				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
+				<location>-0.15599297268820825 -0.11336425921660347 0.07884907517961305</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- LEFT ARM (10 markers)                                        -->
+			<!-- ============================================================ -->
+
+			<!-- lshom (idx 8) - left shoulder marker (acromion) - from SKEL LSHO -->
+			<Marker name="lshom">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.0185392 0.40812773794927715 -0.14923</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lsho (idx 76) - left shoulder joint center - from HALPE_26 LShoulder -->
+			<Marker name="lsho">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.012751615047454833 0.3663070650903635 -0.20157419735588852</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lupperarm (idx 9) - left upper arm - from SKEL LHAP -->
+			<Marker name="lupperarm">
+				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
+				<location>0.005562958752166179 -0.1467899698326304 0.01741572581663342</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lelbm (idx 10) - left elbow lateral marker - from SKEL LELS -->
+			<Marker name="lelbm">
+				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
+				<location>0.0 -0.28420000001120066 0.042753818842211015</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
+			<Marker name="lelbinner">
+				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
+				<location>0.015437151049091376 -0.28553200000955226 -0.03497439015669119</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lelb (idx 72) - left elbow joint center - from HALPE_26 LElbow -->
+			<Marker name="lelb">
+				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
+				<location>0.025 -0.297954547847498 0.00873765299328707</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lforearm (idx 11) - left forearm - from SKEL LFRM -->
+			<Marker name="lforearm">
+				<socket_parent_frame>/bodyset/ulna_l</socket_parent_frame>
+				<location>0.009848511409601893 -0.13346878145986138 -0.02286253045622096</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lwrithumbside (idx 12) - left wrist radial - from SKEL LWRA -->
+			<Marker name="lwrithumbside">
+				<socket_parent_frame>/bodyset/radius_l</socket_parent_frame>
+				<location>-0.013233205156614494 -0.22413690126493618 -0.045661867911345765</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lwripinkieside (idx 13) - left wrist ulnar - from SKEL LWRB -->
+			<Marker name="lwripinkieside">
+				<socket_parent_frame>/bodyset/ulna_l</socket_parent_frame>
+				<location>-0.0389915281991074 -0.23345354398820012 -0.021649555469394753</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lwri (idx 77) - left wrist joint center - from HALPE_26 LWrist -->
+			<Marker name="lwri">
+				<socket_parent_frame>/bodyset/radius_l</socket_parent_frame>
+				<location>-0.00017358908136026123 -0.23509597713454577 -0.009743794995017714</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- RIGHT ARM (10 markers)                                       -->
+			<!-- ============================================================ -->
+
+			<!-- rshom (idx 39) - right shoulder marker (acromion) - from SKEL RSHO -->
+			<Marker name="rshom">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>0.0185392043199829 0.4059920186695396 0.14923005221420216</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rsho (idx 84) - right shoulder joint center - from HALPE_26 RShoulder -->
+			<Marker name="rsho">
+				<socket_parent_frame>/bodyset/torso</socket_parent_frame>
+				<location>-0.012751615047454833 0.3663070650903635 0.20157419735588852</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rupperarm (idx 40) - right upper arm - from SKEL RHAP -->
+			<Marker name="rupperarm">
+				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
+				<location>0.008356056202355392 -0.15146917177175045 -0.014915652012847872</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- relbm (idx 41) - right elbow lateral marker - from SKEL RELS -->
+			<Marker name="relbm">
+				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
+				<location>0.0 -0.2842000000090608 -0.04417234210609709</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
+			<Marker name="relbinner">
+				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
+				<location>0.013638533236292346 -0.2855320000079272 0.03389711713815103</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- relb (idx 80) - right elbow joint center - from HALPE_26 RElbow -->
+			<Marker name="relb">
+				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
+				<location>0.025 -0.297954547847498 -0.00873765299328707</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rforearm (idx 42) - right forearm - from SKEL RFRM -->
+			<Marker name="rforearm">
+				<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
+				<location>0.0041383723911819215 -0.1401319281354834 0.008700653033994421</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rwrithumbside (idx 43) - right wrist radial - from SKEL RWRA -->
+			<Marker name="rwrithumbside">
+				<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
+				<location>-0.008795479365475974 -0.23290898754291783 0.044611808240884204</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rwripinkieside (idx 44) - right wrist ulnar - from SKEL RWRB -->
+			<Marker name="rwripinkieside">
+				<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
+				<location>-0.03841988324890677 -0.24086765888719122 0.020573119722938366</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rwri (idx 85) - right wrist joint center - from HALPE_26 RWrist -->
+			<Marker name="rwri">
+				<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
+				<location>-0.00017358908136026123 -0.23509597713454577 0.009743794995017714</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- LEFT HAND (3 markers)                                        -->
+			<!-- ============================================================ -->
+
+			<!-- lfin (idx 14) - left fingers/middle finger - from SKEL LFIN -->
+			<Marker name="lfin">
+				<socket_parent_frame>/bodyset/hand_l</socket_parent_frame>
+				<location>-0.01396465150317499 -0.08435235651234975 0.0058398516926367805</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lthumb (idx 28) - left thumb - from SKEL LHTH -->
+			<Marker name="lthumb">
+				<socket_parent_frame>/bodyset/hand_l</socket_parent_frame>
+				<location>0.01208232895529713 -0.04674329510058187 -0.056878360119709884</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lhan (idx 74) - left hand center - from LSTM LIndex -->
+			<Marker name="lhan">
+				<socket_parent_frame>/bodyset/hand_l</socket_parent_frame>
+				<location>0.002109783428164221 -0.05414280278079029 -0.014926880788947328</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- RIGHT HAND (3 markers)                                       -->
+			<!-- ============================================================ -->
+
+			<!-- rfin (idx 45) - right fingers/middle finger - from SKEL RFIN -->
+			<Marker name="rfin">
+				<socket_parent_frame>/bodyset/hand_r</socket_parent_frame>
+				<location>-0.004294943344591895 -0.08591573390667853 0.001617945253985074</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rthumb (idx 59) - right thumb - from SKEL RHTH -->
+			<Marker name="rthumb">
+				<socket_parent_frame>/bodyset/hand_r</socket_parent_frame>
+				<location>0.0053822277831633136 -0.046835030960500956 0.057911593983236316</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rhan (idx 82) - right hand center - from LSTM RIndex -->
+			<Marker name="rhan">
+				<socket_parent_frame>/bodyset/hand_r</socket_parent_frame>
+				<location>0.008319410121214066 -0.052770634337673705 0.019802107525682858</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- LEFT THIGH (6 markers)                                       -->
+			<!-- ============================================================ -->
+
+			<!-- lfrontthigh (idx 17) - left front thigh - from SKEL LFFT -->
+			<Marker name="lfrontthigh">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>0.09898600874617923 -0.20636633533794338 0.04163835907569313</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lthigh (idx 18) - left lateral thigh - from SKEL LFLT -->
+			<Marker name="lthigh">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>0.03288242727549987 -0.07200303861553953 -0.05899314129506169</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lfrontinnerthigh (idx 29) - left front inner thigh - from SKEL LFMT -->
+			<Marker name="lfrontinnerthigh">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>0.06428827278172951 -0.32949488431908786 0.07690937071912114</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lknem (idx 19) - left knee lateral marker - from SKEL LKNE -->
+			<Marker name="lknem">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>-0.0062944523 -0.40743083 -0.0456402369</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- linnerknee (idx 30) - left knee medial - from SKEL LKNI -->
+			<Marker name="linnerknee">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>-0.0011692119 -0.4080589584 0.0465546643</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lkne (idx 75) - left knee joint center - from HALPE_26 LKnee -->
+			<Marker name="lkne">
+				<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
+				<location>-0.00541048 -0.397886 -0.000611877</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- RIGHT THIGH (6 markers)                                      -->
+			<!-- ============================================================ -->
+
+			<!-- rfrontthigh (idx 48) - right front thigh - from SKEL RFFT -->
+			<Marker name="rfrontthigh">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>0.0965366146086909 -0.19628065102810446 -0.025812741393005406</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rthigh (idx 49) - right lateral thigh - from SKEL RFLT -->
+			<Marker name="rthigh">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>0.04546990086163433 -0.07231372915862515 0.07030000470176156</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rfrontinnerthigh (idx 60) - right front inner thigh - from SKEL RFMT -->
+			<Marker name="rfrontinnerthigh">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>0.05516392392900452 -0.3094412409158504 -0.05797076000291798</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rknem (idx 50) - right knee lateral marker - from SKEL RKNE -->
+			<Marker name="rknem">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>0.0025471192 -0.4100252062 0.0499987455</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rinnerknee (idx 61) - right knee medial - from SKEL RKNI -->
+			<Marker name="rinnerknee">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>-0.0041299078 -0.4023856025 -0.045284801</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rkne (idx 83) - right knee joint center - from HALPE_26 RKnee -->
+			<Marker name="rkne">
+				<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
+				<location>-0.00541048 -0.397886 0.000611877</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- LEFT TIBIA (3 markers)                                       -->
+			<!-- ============================================================ -->
+
+			<!-- lshin (idx 31) - left shin - from SKEL LSHN -->
+			<Marker name="lshin">
+				<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
+				<location>-0.04748742612765136 -0.15603997847739817 -0.047468697892277756</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lankm (idx 20) - left ankle lateral marker - from SKEL LANK -->
+			<Marker name="lankm">
+				<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
+				<location>-0.003261357067575796 -0.41234520591713086 -0.048497124188215446</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lank (idx 71) - left ankle joint center - from HALPE_26 LAnkle -->
+			<Marker name="lank">
+				<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
+				<location>-0.0002863097610119403 -0.40805 -0.014959548491229383</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- RIGHT TIBIA (3 markers)                                      -->
+			<!-- ============================================================ -->
+
+			<!-- rshin (idx 62) - right shin - from SKEL RSHN -->
+			<Marker name="rshin">
+				<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
+				<location>-0.051148322442840594 -0.15400009934316253 0.05156212732952025</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rankm (idx 51) - right ankle lateral marker - from SKEL RANK -->
+			<Marker name="rankm">
+				<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
+				<location>-0.018222126917264044 -0.41694075286308613 0.04690752605349883</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rank (idx 79) - right ankle joint center - from HALPE_26 RAnkle -->
+			<Marker name="rank">
+				<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
+				<location>-0.0002863097610119403 -0.40805 0.014959548491229383</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- LEFT FOOT (6 markers)                                        -->
+			<!-- ============================================================ -->
+
+			<!-- lhee (idx 21) - left heel - from SKEL LHEE -->
+			<Marker name="lhee">
+				<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+				<location>-0.013293853979739718 0.01602225045808332 0.004569672518660663</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lfifthmetatarsal (idx 22) - left 5th metatarsal - from SKEL LMT5 -->
+			<Marker name="lfifthmetatarsal">
+				<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+				<location>0.14645283515489763 0.0011050748385804006 -0.04677929661519633</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- ltoe (idx 23) - left big toe - from SKEL LTOE -->
+			<Marker name="ltoe">
+				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
+				<location>0.065004 7.6e-05 0.01199</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lfirstmetatarsal (idx 32) - left 1st metatarsal - from SKEL LFPI -->
+			<Marker name="lfirstmetatarsal">
+				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
+				<location>0.0132 -0.006719 -0.051954</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- lfourthtoe (idx 33) - left 4th toe - custom estimate between LTOE and LSmallToe -->
+			<Marker name="lfourthtoe">
+				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
+				<location>0.04761141264351051 -0.006893733996185626 -0.03692592115887141</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- lfoo (idx 78) - left foot center - from HALPE_26 LBigToe (approx) -->
+			<Marker name="lfoo">
+				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
+				<location>0.06466429745867219 0.009869335545469886 0.014580254493150785</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- ============================================================ -->
+			<!-- RIGHT FOOT (6 markers)                                       -->
+			<!-- ============================================================ -->
+
+			<!-- rhee (idx 52) - right heel - from SKEL RHEE -->
+			<Marker name="rhee">
+				<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+				<location>-0.013294123583031656 0.01790034528487826 0.0006192976329640327</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rfifthmetatarsal (idx 53) - right 5th metatarsal - from SKEL RMT5 -->
+			<Marker name="rfifthmetatarsal">
+				<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+				<location>0.14823268724718794 -0.0010904883735850985 0.03983927672397166</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rtoe (idx 54) - right big toe - from SKEL RTOE -->
+			<Marker name="rtoe">
+				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
+				<location>0.065004 7.6e-05 -0.01199</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rfirstmetatarsal (idx 63) - right 1st metatarsal - from SKEL RFPI -->
+			<Marker name="rfirstmetatarsal">
+				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
+				<location>0.0132 -0.006719 0.051954</location>
+				<fixed>true</fixed>
+			</Marker>
+
+			<!-- rfourthtoe (idx 64) - right 4th toe - custom estimate -->
+			<Marker name="rfourthtoe">
+				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
+				<location>0.05048055604215479 -0.0070266499664635345 0.03386055362221197</location>
+				<fixed>false</fixed>
+			</Marker>
+
+			<!-- rfoo (idx 86) - right foot center - from HALPE_26 RBigToe (approx) -->
+			<Marker name="rfoo">
+				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
+				<location>0.06466429745867219 0.009869335545469886 -0.014580254493150785</location>
+				<fixed>true</fixed>
+			</Marker>
+
+		</objects>
+		<groups/>
+	</MarkerSet>
+</OpenSimDocument>

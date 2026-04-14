@@ -22,7 +22,9 @@ logger = logging.getLogger(__name__)
 # ── paths ────────────────────────────────────────────────────────────
 SETUP_DIR = Path(__file__).resolve().parent / 'opensim_setup'
 MODEL_FILE = SETUP_DIR / 'Model_Pose2Sim_muscles_flex.osim'
-MARKERS_FILE = SETUP_DIR / 'Markers_bml_movi_87.xml'
+# Use calibrated markers if available, otherwise fall back to original
+_calibrated = SETUP_DIR / 'Markers_bml_movi_87_calibrated.xml'
+MARKERS_FILE = _calibrated if _calibrated.exists() else SETUP_DIR / 'Markers_bml_movi_87.xml'
 SCALING_SETUP_FILE = SETUP_DIR / 'Scaling_Setup_bml_movi_87.xml'
 IK_SETUP_FILE = SETUP_DIR / 'IK_Setup_bml_movi_87.xml'
 GEOMETRY_DIR = SETUP_DIR / 'Geometry'
