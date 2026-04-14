@@ -96,11 +96,14 @@ def perform_scaling(trc_file, output_dir, subject_mass=69, subject_height=1.75):
 
     mp = scaling_root[0].find('.//MarkerPlacer')
     if mp is not None and mp.find('apply') is not None and mp.find('apply').text.strip().lower() == 'true':
+        # MarkerPlacer only needs a small window to average marker positions.
+        # Using the full range on long videos causes memory issues (bad_alloc).
+        mp_end = min(start_time + 2.0, end_time)
         if mp.find('time_range') is None:
             tr = etree.SubElement(mp, 'time_range')
-            tr.text = f'{start_time} {end_time}'
+            tr.text = f'{start_time} {mp_end}'
         else:
-            mp.find('time_range').text = f'{start_time} {end_time}'
+            mp.find('time_range').text = f'{start_time} {mp_end}'
         if mp.find('output_model_file') is not None:
             mp.find('output_model_file').text = model_name
         if mp.find('output_motion_file') is not None:
