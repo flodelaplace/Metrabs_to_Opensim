@@ -60,9 +60,18 @@ The 87-joint `bml_movi_87` skeleton includes anatomical landmarks needed for bio
 
 ## Installation
 
+### Platform support
+
+| Platform | Status |
+|---|---|
+| **Linux** (Ubuntu 22.04) | Tested, fully supported |
+| **Windows via WSL2** | Tested, fully supported (recommended for Windows users) |
+| **Windows native** | Not tested — CUDA/TensorFlow GPU setup differs significantly (system-wide NVIDIA CUDA install required instead of conda). CPU-only mode may work. If you're on Windows, **use WSL2**. |
+| **macOS** | Not supported (requires NVIDIA GPU) |
+
 ### Prerequisites
 
-- Linux (tested on Ubuntu 22.04 / WSL2)
+- Linux or WSL2 (tested on Ubuntu 22.04)
 - NVIDIA GPU with recent drivers (tested with RTX 3500 Ada)
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or Anaconda
 
