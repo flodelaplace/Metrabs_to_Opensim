@@ -12,8 +12,11 @@ Usage:
 See README.md for full documentation.
 """
 
-import sys
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'          # suppress TF INFO/WARNING
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'         # suppress oneDNN message
+
+import sys
 import json
 import argparse
 import urllib.request
