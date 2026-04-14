@@ -112,9 +112,15 @@ def perform_scaling(trc_file, output_dir, subject_mass=69, subject_height=1.75):
     etree.indent(scaling_tree, space='\t', level=0)
     scaling_tree.write(str(scaling_setup_temp), pretty_print=True, xml_declaration=True, encoding='utf-8')
 
-    logger.info("Running OpenSim ScaleTool...")
-    opensim.ScaleTool(str(scaling_setup_temp)).run()
-    logger.info(f"Scaled model saved: {scaled_model_path.name}")
+    # chdir to output_dir so OpenSim resolves relative paths correctly
+    prev_dir = os.getcwd()
+    os.chdir(str(output_dir))
+    try:
+        logger.info("Running OpenSim ScaleTool...")
+        opensim.ScaleTool(str(scaling_setup_temp)).run()
+        logger.info(f"Scaled model saved: {scaled_model_path.name}")
+    finally:
+        os.chdir(prev_dir)
 
     scaling_setup_temp.unlink(missing_ok=True)
     return scaled_model_path
@@ -145,9 +151,15 @@ def perform_ik(trc_file, output_dir):
     ik_setup_temp = output_dir / (trc_file.stem + '_ik_setup.xml')
     ik_tree.write(str(ik_setup_temp), pretty_print=True, xml_declaration=True, encoding='utf-8')
 
-    logger.info("Running OpenSim Inverse Kinematics...")
-    opensim.InverseKinematicsTool(str(ik_setup_temp)).run()
-    logger.info(f"IK results saved: {mot_file.name}")
+    # chdir to output_dir so OpenSim resolves relative paths correctly
+    prev_dir = os.getcwd()
+    os.chdir(str(output_dir))
+    try:
+        logger.info("Running OpenSim Inverse Kinematics...")
+        opensim.InverseKinematicsTool(str(ik_setup_temp)).run()
+        logger.info(f"IK results saved: {mot_file.name}")
+    finally:
+        os.chdir(prev_dir)
 
     ik_setup_temp.unlink(missing_ok=True)
     return mot_file
