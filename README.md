@@ -268,6 +268,42 @@ output/<video_name>_<YYYYMMDD_HHMMSS>/
 
 ---
 
+## Visualizing results in OpenSim GUI
+
+After running the pipeline with `--ik`, you get a scaled model (`.osim`) and joint angles (`.mot`). To visualize the motion in OpenSim GUI:
+
+### 1. Open the scaled model
+
+- **File > Open Model...**
+- Navigate to `output/<video_name>_<timestamp>/` (or `person_0/` in multi-person mode)
+- Select `poses3d_scaled.osim`
+- The model appears in the 3D viewport, scaled to the subject's anthropometry
+
+### 2. Load the motion
+
+- **File > Load Motion...**
+- Select `poses3d_ik.mot` (in the same folder as the model)
+- The motion loads into the **Navigator** panel on the left
+
+### 3. Play the motion
+
+- Use the **slider** at the bottom of the viewport to scrub through the motion
+- Click the **play button** to animate
+- Right-click the motion in the Navigator to adjust playback speed
+
+### 4. Inspect joint angles
+
+- **Tools > Plot** to open the Plotter
+- Select joints of interest (e.g. `knee_angle_r`, `hip_flexion_l`) to visualize the kinematics curves over time
+
+### Tips
+
+- If the model appears underground or floating, the ground calibration may need adjustment — check the TRC visually first
+- To visualize markers on the model: **View > Markers** (toggles marker visibility)
+- To compare with the raw TRC markers: **File > Load Motion...** and select `poses3d.trc` — this shows the marker trajectories overlaid on the model
+
+---
+
 ## Processing pipeline
 
 ```
