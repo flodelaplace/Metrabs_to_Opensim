@@ -198,5 +198,461 @@
             <Point label="lfoo"/>
             <Link pt1="lank" pt2="lfoo"/>
         </Segment>
+
+        <!-- ====================================================== -->
+        <!-- SURFACE SEGMENTS (skin markers) for full-body outline -->
+        <!-- ====================================================== -->
+
+        <!-- Head surface cluster -->
+        <Segment label="head_lfront" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="lfronthead"/>
+            <Link pt1="head" pt2="lfronthead"/>
+        </Segment>
+        <Segment label="head_rfront" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="rfronthead"/>
+            <Link pt1="head" pt2="rfronthead"/>
+        </Segment>
+        <Segment label="head_lback" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="lbackhead"/>
+            <Link pt1="head" pt2="lbackhead"/>
+        </Segment>
+        <Segment label="head_rback" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="rbackhead"/>
+            <Link pt1="head" pt2="rbackhead"/>
+        </Segment>
+        <Segment label="forehead_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfronthead"/>
+            <Point label="rfronthead"/>
+            <Link pt1="lfronthead" pt2="rfronthead"/>
+        </Segment>
+        <Segment label="backhead_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lbackhead"/>
+            <Point label="rbackhead"/>
+            <Link pt1="lbackhead" pt2="rbackhead"/>
+        </Segment>
+        <Segment label="rcheek_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfronthead"/>
+            <Point label="rcheek"/>
+            <Link pt1="rfronthead" pt2="rcheek"/>
+        </Segment>
+        <Segment label="lcheek_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfronthead"/>
+            <Point label="lcheek"/>
+            <Link pt1="lfronthead" pt2="lcheek"/>
+        </Segment>
+        <Segment label="nape" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="backneck"/>
+            <Link pt1="head" pt2="backneck"/>
+        </Segment>
+
+        <!-- Torso front -->
+        <Segment label="front_neck" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="backneck"/>
+            <Point label="clavicle"/>
+            <Link pt1="backneck" pt2="clavicle"/>
+        </Segment>
+        <Segment label="sternum_upper" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="clavicle"/>
+            <Point label="sternum"/>
+            <Link pt1="clavicle" pt2="sternum"/>
+        </Segment>
+        <Segment label="rclavicle_surface" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="clavicle"/>
+            <Point label="rshom"/>
+            <Link pt1="clavicle" pt2="rshom"/>
+        </Segment>
+        <Segment label="lclavicle_surface" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="clavicle"/>
+            <Point label="lshom"/>
+            <Link pt1="clavicle" pt2="lshom"/>
+        </Segment>
+        <Segment label="rbreast_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="sternum"/>
+            <Point label="rbreast"/>
+            <Link pt1="sternum" pt2="rbreast"/>
+        </Segment>
+        <Segment label="lbreast_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="sternum"/>
+            <Point label="lbreast"/>
+            <Link pt1="sternum" pt2="lbreast"/>
+        </Segment>
+        <Segment label="sternum_umbilicus" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="sternum"/>
+            <Point label="umbilicus"/>
+            <Link pt1="sternum" pt2="umbilicus"/>
+        </Segment>
+
+        <!-- Torso back -->
+        <Segment label="back_neck_upper" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="backneck"/>
+            <Point label="upperback"/>
+            <Link pt1="backneck" pt2="upperback"/>
+        </Segment>
+        <Segment label="rscapula_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="upperback"/>
+            <Point label="rscapula"/>
+            <Link pt1="upperback" pt2="rscapula"/>
+        </Segment>
+        <Segment label="lscapula_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="upperback"/>
+            <Point label="lscapula"/>
+            <Link pt1="upperback" pt2="lscapula"/>
+        </Segment>
+        <Segment label="rback_vert" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rscapula"/>
+            <Point label="rback"/>
+            <Link pt1="rscapula" pt2="rback"/>
+        </Segment>
+        <Segment label="lback_vert" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lscapula"/>
+            <Point label="lback"/>
+            <Link pt1="lscapula" pt2="lback"/>
+        </Segment>
+        <Segment label="rback_to_rpsis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rback"/>
+            <Point label="rpsis"/>
+            <Link pt1="rback" pt2="rpsis"/>
+        </Segment>
+        <Segment label="lback_to_lpsis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lback"/>
+            <Point label="lpsis"/>
+            <Link pt1="lback" pt2="lpsis"/>
+        </Segment>
+
+        <!-- Pelvis front -->
+        <Segment label="asis_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lasis"/>
+            <Point label="rasis"/>
+            <Link pt1="lasis" pt2="rasis"/>
+        </Segment>
+        <Segment label="rwaist_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwaist"/>
+            <Point label="rasis"/>
+            <Link pt1="rwaist" pt2="rasis"/>
+        </Segment>
+        <Segment label="lwaist_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwaist"/>
+            <Point label="lasis"/>
+            <Link pt1="lwaist" pt2="lasis"/>
+        </Segment>
+        <Segment label="umbilicus_rwaist" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="umbilicus"/>
+            <Point label="rwaist"/>
+            <Link pt1="umbilicus" pt2="rwaist"/>
+        </Segment>
+        <Segment label="umbilicus_lwaist" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="umbilicus"/>
+            <Point label="lwaist"/>
+            <Link pt1="umbilicus" pt2="lwaist"/>
+        </Segment>
+
+        <!-- Pelvis back -->
+        <Segment label="psis_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lpsis"/>
+            <Point label="rpsis"/>
+            <Link pt1="lpsis" pt2="rpsis"/>
+        </Segment>
+        <Segment label="riliac" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rasis"/>
+            <Point label="rpsis"/>
+            <Link pt1="rasis" pt2="rpsis"/>
+        </Segment>
+        <Segment label="liliac" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lasis"/>
+            <Point label="lpsis"/>
+            <Link pt1="lasis" pt2="lpsis"/>
+        </Segment>
+        <Segment label="bum_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lbum"/>
+            <Point label="rbum"/>
+            <Link pt1="lbum" pt2="rbum"/>
+        </Segment>
+        <Segment label="rbum_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rpsis"/>
+            <Point label="rbum"/>
+            <Link pt1="rpsis" pt2="rbum"/>
+        </Segment>
+        <Segment label="lbum_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lpsis"/>
+            <Point label="lbum"/>
+            <Link pt1="lpsis" pt2="lbum"/>
+        </Segment>
+
+        <!-- Right arm surface -->
+        <Segment label="rshoulder_surf" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rshom"/>
+            <Point label="rupperarm"/>
+            <Link pt1="rshom" pt2="rupperarm"/>
+        </Segment>
+        <Segment label="rupperarm_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rupperarm"/>
+            <Point label="relbm"/>
+            <Link pt1="rupperarm" pt2="relbm"/>
+        </Segment>
+        <Segment label="rupperarm_inner" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rupperarm"/>
+            <Point label="relbinner"/>
+            <Link pt1="rupperarm" pt2="relbinner"/>
+        </Segment>
+        <Segment label="relbow_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="relbm"/>
+            <Point label="relbinner"/>
+            <Link pt1="relbm" pt2="relbinner"/>
+        </Segment>
+        <Segment label="rforearm_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="relbm"/>
+            <Point label="rforearm"/>
+            <Link pt1="relbm" pt2="rforearm"/>
+        </Segment>
+        <Segment label="rforearm_inner" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="relbinner"/>
+            <Point label="rforearm"/>
+            <Link pt1="relbinner" pt2="rforearm"/>
+        </Segment>
+        <Segment label="rwrist_thumb" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rforearm"/>
+            <Point label="rwrithumbside"/>
+            <Link pt1="rforearm" pt2="rwrithumbside"/>
+        </Segment>
+        <Segment label="rwrist_pinkie" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rforearm"/>
+            <Point label="rwripinkieside"/>
+            <Link pt1="rforearm" pt2="rwripinkieside"/>
+        </Segment>
+        <Segment label="rwrist_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwrithumbside"/>
+            <Point label="rwripinkieside"/>
+            <Link pt1="rwrithumbside" pt2="rwripinkieside"/>
+        </Segment>
+        <Segment label="rthumb_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwrithumbside"/>
+            <Point label="rthumb"/>
+            <Link pt1="rwrithumbside" pt2="rthumb"/>
+        </Segment>
+        <Segment label="rfin_thumb" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwrithumbside"/>
+            <Point label="rfin"/>
+            <Link pt1="rwrithumbside" pt2="rfin"/>
+        </Segment>
+        <Segment label="rfin_pinkie" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwripinkieside"/>
+            <Point label="rfin"/>
+            <Link pt1="rwripinkieside" pt2="rfin"/>
+        </Segment>
+
+        <!-- Left arm surface -->
+        <Segment label="lshoulder_surf" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lshom"/>
+            <Point label="lupperarm"/>
+            <Link pt1="lshom" pt2="lupperarm"/>
+        </Segment>
+        <Segment label="lupperarm_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lupperarm"/>
+            <Point label="lelbm"/>
+            <Link pt1="lupperarm" pt2="lelbm"/>
+        </Segment>
+        <Segment label="lupperarm_inner" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lupperarm"/>
+            <Point label="lelbinner"/>
+            <Link pt1="lupperarm" pt2="lelbinner"/>
+        </Segment>
+        <Segment label="lelbow_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lelbm"/>
+            <Point label="lelbinner"/>
+            <Link pt1="lelbm" pt2="lelbinner"/>
+        </Segment>
+        <Segment label="lforearm_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lelbm"/>
+            <Point label="lforearm"/>
+            <Link pt1="lelbm" pt2="lforearm"/>
+        </Segment>
+        <Segment label="lforearm_inner" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lelbinner"/>
+            <Point label="lforearm"/>
+            <Link pt1="lelbinner" pt2="lforearm"/>
+        </Segment>
+        <Segment label="lwrist_thumb" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lforearm"/>
+            <Point label="lwrithumbside"/>
+            <Link pt1="lforearm" pt2="lwrithumbside"/>
+        </Segment>
+        <Segment label="lwrist_pinkie" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lforearm"/>
+            <Point label="lwripinkieside"/>
+            <Link pt1="lforearm" pt2="lwripinkieside"/>
+        </Segment>
+        <Segment label="lwrist_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwrithumbside"/>
+            <Point label="lwripinkieside"/>
+            <Link pt1="lwrithumbside" pt2="lwripinkieside"/>
+        </Segment>
+        <Segment label="lthumb_link" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwrithumbside"/>
+            <Point label="lthumb"/>
+            <Link pt1="lwrithumbside" pt2="lthumb"/>
+        </Segment>
+        <Segment label="lfin_thumb" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwrithumbside"/>
+            <Point label="lfin"/>
+            <Link pt1="lwrithumbside" pt2="lfin"/>
+        </Segment>
+        <Segment label="lfin_pinkie" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwripinkieside"/>
+            <Point label="lfin"/>
+            <Link pt1="lwripinkieside" pt2="lfin"/>
+        </Segment>
+
+        <!-- Right thigh & leg surface -->
+        <Segment label="rasis_to_frontthigh" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rasis"/>
+            <Point label="rfrontthigh"/>
+            <Link pt1="rasis" pt2="rfrontthigh"/>
+        </Segment>
+        <Segment label="rasis_to_frontinnerthigh" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rasis"/>
+            <Point label="rfrontinnerthigh"/>
+            <Link pt1="rasis" pt2="rfrontinnerthigh"/>
+        </Segment>
+        <Segment label="rfrontthigh_to_knem" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfrontthigh"/>
+            <Point label="rknem"/>
+            <Link pt1="rfrontthigh" pt2="rknem"/>
+        </Segment>
+        <Segment label="rfrontinnerthigh_to_innerknee" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfrontinnerthigh"/>
+            <Point label="rinnerknee"/>
+            <Link pt1="rfrontinnerthigh" pt2="rinnerknee"/>
+        </Segment>
+        <Segment label="rthigh_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rthigh"/>
+            <Point label="rknem"/>
+            <Link pt1="rthigh" pt2="rknem"/>
+        </Segment>
+        <Segment label="rknee_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rknem"/>
+            <Point label="rinnerknee"/>
+            <Link pt1="rknem" pt2="rinnerknee"/>
+        </Segment>
+        <Segment label="rshin_front" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rknem"/>
+            <Point label="rshin"/>
+            <Link pt1="rknem" pt2="rshin"/>
+        </Segment>
+        <Segment label="rshin_to_ankle" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rshin"/>
+            <Point label="rankm"/>
+            <Link pt1="rshin" pt2="rankm"/>
+        </Segment>
+        <Segment label="rinner_tibia" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rinnerknee"/>
+            <Point label="rankm"/>
+            <Link pt1="rinnerknee" pt2="rankm"/>
+        </Segment>
+
+        <!-- Left thigh & leg surface -->
+        <Segment label="lasis_to_frontthigh" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lasis"/>
+            <Point label="lfrontthigh"/>
+            <Link pt1="lasis" pt2="lfrontthigh"/>
+        </Segment>
+        <Segment label="lasis_to_frontinnerthigh" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lasis"/>
+            <Point label="lfrontinnerthigh"/>
+            <Link pt1="lasis" pt2="lfrontinnerthigh"/>
+        </Segment>
+        <Segment label="lfrontthigh_to_knem" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfrontthigh"/>
+            <Point label="lknem"/>
+            <Link pt1="lfrontthigh" pt2="lknem"/>
+        </Segment>
+        <Segment label="lfrontinnerthigh_to_innerknee" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfrontinnerthigh"/>
+            <Point label="linnerknee"/>
+            <Link pt1="lfrontinnerthigh" pt2="linnerknee"/>
+        </Segment>
+        <Segment label="lthigh_outer" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lthigh"/>
+            <Point label="lknem"/>
+            <Link pt1="lthigh" pt2="lknem"/>
+        </Segment>
+        <Segment label="lknee_band" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lknem"/>
+            <Point label="linnerknee"/>
+            <Link pt1="lknem" pt2="linnerknee"/>
+        </Segment>
+        <Segment label="lshin_front" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lknem"/>
+            <Point label="lshin"/>
+            <Link pt1="lknem" pt2="lshin"/>
+        </Segment>
+        <Segment label="lshin_to_ankle" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lshin"/>
+            <Point label="lankm"/>
+            <Link pt1="lshin" pt2="lankm"/>
+        </Segment>
+        <Segment label="linner_tibia" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="linnerknee"/>
+            <Point label="lankm"/>
+            <Link pt1="linnerknee" pt2="lankm"/>
+        </Segment>
+
+        <!-- Right foot surface -->
+        <Segment label="rhee_to_fifth" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rhee"/>
+            <Point label="rfifthmetatarsal"/>
+            <Link pt1="rhee" pt2="rfifthmetatarsal"/>
+        </Segment>
+        <Segment label="rhee_to_first" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rhee"/>
+            <Point label="rfirstmetatarsal"/>
+            <Link pt1="rhee" pt2="rfirstmetatarsal"/>
+        </Segment>
+        <Segment label="rfirstmeta_to_toe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfirstmetatarsal"/>
+            <Point label="rtoe"/>
+            <Link pt1="rfirstmetatarsal" pt2="rtoe"/>
+        </Segment>
+        <Segment label="rfifthmeta_to_fourthtoe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfifthmetatarsal"/>
+            <Point label="rfourthtoe"/>
+            <Link pt1="rfifthmetatarsal" pt2="rfourthtoe"/>
+        </Segment>
+        <Segment label="rfourthtoe_to_toe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rfourthtoe"/>
+            <Point label="rtoe"/>
+            <Link pt1="rfourthtoe" pt2="rtoe"/>
+        </Segment>
+
+        <!-- Left foot surface -->
+        <Segment label="lhee_to_fifth" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lhee"/>
+            <Point label="lfifthmetatarsal"/>
+            <Link pt1="lhee" pt2="lfifthmetatarsal"/>
+        </Segment>
+        <Segment label="lhee_to_first" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lhee"/>
+            <Point label="lfirstmetatarsal"/>
+            <Link pt1="lhee" pt2="lfirstmetatarsal"/>
+        </Segment>
+        <Segment label="lfirstmeta_to_toe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfirstmetatarsal"/>
+            <Point label="ltoe"/>
+            <Link pt1="lfirstmetatarsal" pt2="ltoe"/>
+        </Segment>
+        <Segment label="lfifthmeta_to_fourthtoe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfifthmetatarsal"/>
+            <Point label="lfourthtoe"/>
+            <Link pt1="lfifthmetatarsal" pt2="lfourthtoe"/>
+        </Segment>
+        <Segment label="lfourthtoe_to_toe" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lfourthtoe"/>
+            <Point label="ltoe"/>
+            <Link pt1="lfourthtoe" pt2="ltoe"/>
+        </Segment>
     </SegmentsList>
 </MokkaModelVisualConfiguration>
