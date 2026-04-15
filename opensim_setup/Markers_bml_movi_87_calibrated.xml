@@ -15,7 +15,7 @@
 			<Marker name="head">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
 				<location>-0.019900 0.078400 -0.004700</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- lfronthead (idx 5) - left front temple -->
@@ -50,14 +50,14 @@
 			<Marker name="lcheek">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
 				<location>0.084464 0.0452599 -0.0311069</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- rcheek (idx 55) - right cheek - from LSTM REye (approx) -->
 			<Marker name="rcheek">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
 				<location>0.084464 0.0452599 0.0311069</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- ============================================================ -->
@@ -265,21 +265,21 @@
 			<Marker name="lelbm">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
 				<location>0.015437151049091376 -0.28553200000955226 -0.03497439015669119</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
 			<Marker name="lelbinner">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
 				<location>0.002600 -0.331600 0.050600</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- lelb (idx 72) - left elbow joint center - from HALPE_26 LElbow -->
 			<Marker name="lelb">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
 				<location>0.025 -0.297954547847498 0.00873765299328707</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- lforearm (idx 11) - left forearm - from SKEL LFRM -->
@@ -339,21 +339,21 @@
 			<Marker name="relbm">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 				<location>0.013638533236292346 -0.2855320000079272 0.03389711713815103</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
 			<Marker name="relbinner">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 				<location>0.018100 -0.316600 -0.053500</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- relb (idx 80) - right elbow joint center - from HALPE_26 RElbow -->
 			<Marker name="relb">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 				<location>0.025 -0.297954547847498 -0.00873765299328707</location>
-				<fixed>true</fixed>
+				<fixed>false</fixed>
 			</Marker>
 
 			<!-- rforearm (idx 42) - right forearm - from SKEL RFRM -->
