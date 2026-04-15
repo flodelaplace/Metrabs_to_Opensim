@@ -654,5 +654,81 @@
             <Point label="ltoe"/>
             <Link pt1="lfourthtoe" pt2="ltoe"/>
         </Segment>
+
+        <!-- Extra thigh connections (lateral thigh to hip / asis) -->
+        <Segment label="rthigh_to_rhip" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rthigh"/>
+            <Point label="rhip"/>
+            <Link pt1="rthigh" pt2="rhip"/>
+        </Segment>
+        <Segment label="rthigh_to_rasis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rthigh"/>
+            <Point label="rasis"/>
+            <Link pt1="rthigh" pt2="rasis"/>
+        </Segment>
+        <Segment label="lthigh_to_lhip" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lthigh"/>
+            <Point label="lhip"/>
+            <Link pt1="lthigh" pt2="lhip"/>
+        </Segment>
+        <Segment label="lthigh_to_lasis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lthigh"/>
+            <Point label="lasis"/>
+            <Link pt1="lthigh" pt2="lasis"/>
+        </Segment>
+
+        <!-- Extra ankle/heel connections -->
+        <Segment label="rank_to_rankm" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rank"/>
+            <Point label="rankm"/>
+            <Link pt1="rank" pt2="rankm"/>
+        </Segment>
+        <Segment label="rank_to_rhee" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rank"/>
+            <Point label="rhee"/>
+            <Link pt1="rank" pt2="rhee"/>
+        </Segment>
+        <Segment label="lank_to_lankm" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lank"/>
+            <Point label="lankm"/>
+            <Link pt1="lank" pt2="lankm"/>
+        </Segment>
+        <Segment label="lank_to_lhee" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lank"/>
+            <Point label="lhee"/>
+            <Link pt1="lank" pt2="lhee"/>
+        </Segment>
+
+        <!-- Extra abdomen / chest connections -->
+        <Segment label="umbilicus_to_rasis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="umbilicus"/>
+            <Point label="rasis"/>
+            <Link pt1="umbilicus" pt2="rasis"/>
+        </Segment>
+        <Segment label="umbilicus_to_lasis" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="umbilicus"/>
+            <Point label="lasis"/>
+            <Link pt1="umbilicus" pt2="lasis"/>
+        </Segment>
+        <Segment label="lwaist_to_lbreast" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lwaist"/>
+            <Point label="lbreast"/>
+            <Link pt1="lwaist" pt2="lbreast"/>
+        </Segment>
+        <Segment label="lbreast_to_lshom" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="lbreast"/>
+            <Point label="lshom"/>
+            <Link pt1="lbreast" pt2="lshom"/>
+        </Segment>
+        <Segment label="rwaist_to_rbreast" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rwaist"/>
+            <Point label="rbreast"/>
+            <Link pt1="rwaist" pt2="rbreast"/>
+        </Segment>
+        <Segment label="rbreast_to_rshom" colorR="0.8" colorG="0.8" colorB="0.8" visible="1" surface="0" description="">
+            <Point label="rbreast"/>
+            <Point label="rshom"/>
+            <Link pt1="rbreast" pt2="rshom"/>
+        </Segment>
     </SegmentsList>
 </MokkaModelVisualConfiguration>
