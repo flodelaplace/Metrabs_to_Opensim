@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MokkaModelVisualConfiguration name="BML_movi_87_mokka" version="1.0">
+    <MarkersList>
+        <Marker label="backneck" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="upperback" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="clavicle" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="sternum" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="umbilicus" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfronthead" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lbackhead" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lback" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lshom" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lupperarm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lelbm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lforearm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lwrithumbside" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lwripinkieside" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfin" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lasis" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lpsis" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfrontthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lknem" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lankm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lhee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfifthmetatarsal" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="ltoe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lcheek" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lbreast" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lelbinner" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lwaist" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lthumb" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfrontinnerthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="linnerknee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lshin" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfirstmetatarsal" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfourthtoe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lscapula" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lbum" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfronthead" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rbackhead" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rback" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rshom" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rupperarm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="relbm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rforearm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rwrithumbside" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rwripinkieside" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfin" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rasis" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rpsis" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfrontthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rknem" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rankm" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rhee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfifthmetatarsal" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rtoe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rcheek" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rbreast" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="relbinner" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rwaist" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rthumb" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfrontinnerthigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rinnerknee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rshin" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfirstmetatarsal" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfourthtoe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rscapula" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rbum" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="head" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="mhip" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="pelv" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="thor" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lank" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lelb" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lhip" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lhan" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lkne" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lsho" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lwri" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="lfoo" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rank" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="relb" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rhip" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rhan" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rkne" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rsho" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rwri" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="rfoo" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+    </MarkersList>
+    <SegmentsList>
+        <!-- Spine / trunk -->
+        <Segment label="neck" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="head"/>
+            <Point label="thor"/>
+            <Link pt1="head" pt2="thor"/>
+        </Segment>
+        <Segment label="thorax" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="thor"/>
+            <Point label="pelv"/>
+            <Link pt1="thor" pt2="pelv"/>
+        </Segment>
+        <Segment label="lumbar" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="pelv"/>
+            <Point label="mhip"/>
+            <Link pt1="pelv" pt2="mhip"/>
+        </Segment>
+
+        <!-- Shoulders (clavicles) -->
+        <Segment label="rclavicle" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="thor"/>
+            <Point label="rsho"/>
+            <Link pt1="thor" pt2="rsho"/>
+        </Segment>
+        <Segment label="lclavicle" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="thor"/>
+            <Point label="lsho"/>
+            <Link pt1="thor" pt2="lsho"/>
+        </Segment>
+
+        <!-- Right arm -->
+        <Segment label="rhumerus" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="rsho"/>
+            <Point label="relb"/>
+            <Link pt1="rsho" pt2="relb"/>
+        </Segment>
+        <Segment label="rforearm" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="relb"/>
+            <Point label="rwri"/>
+            <Link pt1="relb" pt2="rwri"/>
+        </Segment>
+        <Segment label="rhand" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="rwri"/>
+            <Point label="rhan"/>
+            <Link pt1="rwri" pt2="rhan"/>
+        </Segment>
+
+        <!-- Left arm -->
+        <Segment label="lhumerus" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lsho"/>
+            <Point label="lelb"/>
+            <Link pt1="lsho" pt2="lelb"/>
+        </Segment>
+        <Segment label="lforearm" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lelb"/>
+            <Point label="lwri"/>
+            <Link pt1="lelb" pt2="lwri"/>
+        </Segment>
+        <Segment label="lhand" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lwri"/>
+            <Point label="lhan"/>
+            <Link pt1="lwri" pt2="lhan"/>
+        </Segment>
+
+        <!-- Pelvis -->
+        <Segment label="rpelvis" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="mhip"/>
+            <Point label="rhip"/>
+            <Link pt1="mhip" pt2="rhip"/>
+        </Segment>
+        <Segment label="lpelvis" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="mhip"/>
+            <Point label="lhip"/>
+            <Link pt1="mhip" pt2="lhip"/>
+        </Segment>
+
+        <!-- Right leg -->
+        <Segment label="rfemur" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="rhip"/>
+            <Point label="rkne"/>
+            <Link pt1="rhip" pt2="rkne"/>
+        </Segment>
+        <Segment label="rtibia" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="rank"/>
+            <Point label="rkne"/>
+            <Link pt1="rank" pt2="rkne"/>
+        </Segment>
+        <Segment label="rfoot" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="rank"/>
+            <Point label="rfoo"/>
+            <Link pt1="rank" pt2="rfoo"/>
+        </Segment>
+
+        <!-- Left leg -->
+        <Segment label="lfemur" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lhip"/>
+            <Point label="lkne"/>
+            <Link pt1="lhip" pt2="lkne"/>
+        </Segment>
+        <Segment label="ltibia" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lank"/>
+            <Point label="lkne"/>
+            <Link pt1="lank" pt2="lkne"/>
+        </Segment>
+        <Segment label="lfoot" colorR="1" colorG="1" colorB="1" visible="1" surface="0" description="">
+            <Point label="lank"/>
+            <Point label="lfoo"/>
+            <Link pt1="lank" pt2="lfoo"/>
+        </Segment>
+    </SegmentsList>
+</MokkaModelVisualConfiguration>

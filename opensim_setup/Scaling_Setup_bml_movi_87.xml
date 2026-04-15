@@ -262,12 +262,6 @@
 								<BodyScale name="Abdomen">
 									<axes> X Y</axes>
 								</BodyScale>
-								<BodyScale name="head">
-									<axes> X Y</axes>
-								</BodyScale>
-								<BodyScale name="sacrum">
-									<axes> X Y</axes>
-								</BodyScale>
 							</objects>
 							<groups />
 						</BodyScaleSet>
@@ -311,12 +305,6 @@
 									<axes> Z</axes>
 								</BodyScale>
 								<BodyScale name="Abdomen">
-									<axes> Z</axes>
-								</BodyScale>
-								<BodyScale name="head">
-									<axes> Z</axes>
-								</BodyScale>
-								<BodyScale name="sacrum">
 									<axes> Z</axes>
 								</BodyScale>
 							</objects>
