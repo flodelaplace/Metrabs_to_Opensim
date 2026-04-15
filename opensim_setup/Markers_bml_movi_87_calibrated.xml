@@ -14,35 +14,35 @@
 			<!-- head (idx 67) - top of head - from HALPE_26 Head -->
 			<Marker name="head">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
-				<location>0.0159224 0.164131 0.0</location>
+				<location>-0.019900 0.078400 -0.004700</location>
 				<fixed>true</fixed>
 			</Marker>
 
 			<!-- lfronthead (idx 5) - left front temple -->
 			<Marker name="lfronthead">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
-				<location>0.065 0.12 -0.06</location>
+				<location>0.043600 0.134200 -0.051700</location>
 				<fixed>false</fixed>
 			</Marker>
 
 			<!-- rfronthead (idx 36) - right front temple -->
 			<Marker name="rfronthead">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
-				<location>0.065 0.12 0.06</location>
+				<location>0.043700 0.132100 0.039300</location>
 				<fixed>false</fixed>
 			</Marker>
 
 			<!-- lbackhead (idx 6) - left back of skull -->
 			<Marker name="lbackhead">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
-				<location>-0.05 0.1 -0.045</location>
+				<location>-0.077700 0.037000 -0.055900</location>
 				<fixed>false</fixed>
 			</Marker>
 
 			<!-- rbackhead (idx 37) - right back of skull -->
 			<Marker name="rbackhead">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
-				<location>-0.05 0.1 0.045</location>
+				<location>-0.077400 0.030700 0.040800</location>
 				<fixed>false</fixed>
 			</Marker>
 
@@ -183,7 +183,7 @@
 			<!-- mhip (idx 68) - mid hip center - from HALPE_26 Hip -->
 			<Marker name="mhip">
 				<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-				<location>-0.0639274 -0.08134311294555664 0.0</location>
+				<location>-0.107400 -0.029100 0.011100</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -271,7 +271,7 @@
 			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
 			<Marker name="lelbinner">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
-				<location>0.0 -0.28420000001120066 0.042753818842211015</location>
+				<location>0.002600 -0.331600 0.050600</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -345,7 +345,7 @@
 			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
 			<Marker name="relbinner">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
-				<location>0.0 -0.2842000000090608 -0.04417234210609709</location>
+				<location>0.018100 -0.316600 -0.053500</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -604,7 +604,7 @@
 			<!-- lfirstmetatarsal (idx 32) - left 1st metatarsal - from SKEL LFPI -->
 			<Marker name="lfirstmetatarsal">
 				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-				<location>0.0132 -0.006719 -0.051954</location>
+				<location>0.001100 0.003700 0.012500</location>
 				<fixed>true</fixed>
 			</Marker>
 
@@ -650,7 +650,7 @@
 			<!-- rfirstmetatarsal (idx 63) - right 1st metatarsal - from SKEL RFPI -->
 			<Marker name="rfirstmetatarsal">
 				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-				<location>0.0132 -0.006719 0.051954</location>
+				<location>-0.003400 0.001500 -0.007100</location>
 				<fixed>true</fixed>
 			</Marker>
 
