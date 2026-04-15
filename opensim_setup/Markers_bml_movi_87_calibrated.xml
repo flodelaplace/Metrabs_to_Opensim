@@ -50,14 +50,14 @@
 			<Marker name="lcheek">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
 				<location>0.084464 0.0452599 -0.0311069</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- rcheek (idx 55) - right cheek - from LSTM REye (approx) -->
 			<Marker name="rcheek">
 				<socket_parent_frame>/bodyset/head</socket_parent_frame>
 				<location>0.084464 0.0452599 0.0311069</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- ============================================================ -->
@@ -265,7 +265,7 @@
 			<Marker name="lelbm">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
 				<location>0.015437151049091376 -0.28553200000955226 -0.03497439015669119</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- lelbinner (idx 26) - left elbow medial - from SKEL LELSO -->
@@ -279,7 +279,7 @@
 			<Marker name="lelb">
 				<socket_parent_frame>/bodyset/humerus_l</socket_parent_frame>
 				<location>0.025 -0.297954547847498 0.00873765299328707</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- lforearm (idx 11) - left forearm - from SKEL LFRM -->
@@ -339,7 +339,7 @@
 			<Marker name="relbm">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 				<location>0.013638533236292346 -0.2855320000079272 0.03389711713815103</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- relbinner (idx 57) - right elbow medial - from SKEL RELSO -->
@@ -353,7 +353,7 @@
 			<Marker name="relb">
 				<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 				<location>0.025 -0.297954547847498 -0.00873765299328707</location>
-				<fixed>false</fixed>
+				<fixed>true</fixed>
 			</Marker>
 
 			<!-- rforearm (idx 42) - right forearm - from SKEL RFRM -->
